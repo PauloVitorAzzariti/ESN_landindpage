@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Sessões genéricas */
+section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Imagens para DESKTOP */
+.section1 {
+  background-image: url('img2/1_section_pc.jpg');
+}
+
+.sobre {
+  background-image: url('img2/2_section_pc.jpg');
+}
+
+.servicos {
+  background-image: url('img2/3_section_pc.jpg');
+}
+
+.contato {
+  background-image: url('img2/4_section_pc.jpg');
+}
+
+.contato {
+  background-image: url('img2/5_section_pc.jpg');
+}
+
+.pagamento {
+  background-image: url('img2/6_section_pc.jpg');
+}
+
+.section1 {
+  position: relative;
+}
+
+.botao-flutuante {
+  position: absolute;
+  left: 300px; /* posição no espaço preto à esquerda */
+  bottom: 10%; /* ajuste para alinhar na parte média/baixa */ 
+  background-color: #39ff14; /* Verde fluorescente */
+  color: #000;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 10;
+   display: inline-block;
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  animation: pulse 1.5s infinite;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14;
+}
+
+.botao-flutuante:hover {
+  background-color: #00cc6a;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  }
+  50% {
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;
+  }
+  100% {
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  }
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .botao-flutuante {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+
+/* Imagens para MOBILE */
+@media (max-width: 768px) {
+  .section1 {
+    background-image: url('img2/1_section_mov.jpg');
+  }
+
+  .sobre {
+    background-image: url('img2/2_section_mov.jpg');
+  }
+
+  .servicos {
+    background-image: url('img2/3_section_mov.jpg');
+  }
+
+  .contato {
+    background-image: url('img2/4_section_mov.jpg');
+  }
+
+   .contato {
+    background-image: url('img2/5_section_mov.jpg');
+  }
+
+   .contato {
+    background-image: url('img2/6_section_mov.jpg');
+  }
+
+   .contato {
+    background-image: url('img2/7_section_mov.jpg');
+  }
+
+   .contato {
+    background-image: url('img2/8_section_mov.jpg');
+  }
+
+  .contato {
+    background-image: url('img2/9_section_mov.jpg');
+  }
+}
+
